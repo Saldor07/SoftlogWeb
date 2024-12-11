@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softlog Türkiye</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Koyu/Açık Tema Tuşu -->
+        <button id="themeToggle">🌙</button>
+
+        <!-- Ortada Logo ve Arama Çubuğu -->
+        <div id="main">
+            <img src="softlog_logo.png" alt="softlog_logo.png" id="siteLogo">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Aramak istediğiniz şeyi yazın...">
+                <button type="submit">Ara</button>
+            </form>
+        </div>
+
+        <!-- Kısayol Ekleme -->
+        <div id="shortcuts">
+            <button id="addShortcut">⭐</button>
+            <ul id="shortcutList"></ul>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <h3>Yeni Kısayol Ekle</h3>
+            <label for="siteName">Site Adı:</label>
+            <input type="text" id="siteName" placeholder="Site adını girin">
+            <label for="siteURL">Site URL'si:</label>
+            <input type="text" id="siteURL" placeholder="https://">
+            <button id="saveShortcut">Kaydet</button>
+            <button id="closeModal">Kapat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
